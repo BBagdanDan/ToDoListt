@@ -7,7 +7,7 @@ const { User } = require("./entity/User.js");
 const testController = require("./controllers/testController");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());

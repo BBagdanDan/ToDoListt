@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import InputTD from '../components/todo/inputTD';
 import ListTD from '../components/todo/listTD';
 import { fetchTasks, saveTasks } from '../api/tasksAPI';
-import { LogoutButton, Container, NavLinks, Header } from '../styles/styles';
-import { Link } from 'react-router-dom';
+import { LogoutButton, Container, Header } from '../styles/styles';
 
 const Title = styled.h2`
   margin-bottom: 20px;
@@ -148,11 +147,6 @@ const Tasks = () => {
   return (
     <div>
       <Header>
-        <NavLinks>
-          <Link to="/cats" data-testid="cats-link">
-            Cat Cards
-          </Link>
-        </NavLinks>
         <LogoutButton data-testid="logout-button" onClick={handleLogout}>
           Log out
         </LogoutButton>

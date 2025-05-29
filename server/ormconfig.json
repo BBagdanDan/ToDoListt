@@ -1,14 +1,14 @@
 {
-  "development": {
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "postgres",
-    "password": "123",
-    "database": "postgres",
-    "synchronize": false,
-    "logging": true,
-    "entities": ["entity/*.js"]
+"development": {
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "123",
+  "database": "postgres",
+  "synchronize": false,
+  "logging": true,
+  "entities": ["entity/*.js"]
   },
   "production": {
     "type": "postgres",
@@ -17,7 +17,7 @@
     "username": "postgres",
     "password": "123",
     "database": "postgres",
-    "synchronize": true,
+    "synchronize": false,
     "logging": false,
     "entities": ["entity/*.js"]
   },
